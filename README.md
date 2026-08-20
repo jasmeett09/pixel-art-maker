@@ -2,6 +2,9 @@
 
 A simple and interactive **Pixel Art Maker** built using vanilla HTML, CSS, and JavaScript. It allows users to create pixel-based artwork directly in the browser using different colors and customizable grid sizes.
 
+## Live Demo
+https://jasmeett09.github.io/pixel-art-maker/
+
 ## Preview
 
 <img width="1897" height="907" alt="image" src="https://github.com/user-attachments/assets/23098f38-0502-4618-9a81-cfdfb0d6a14d" />
