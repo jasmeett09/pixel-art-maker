@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Art Maker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decorations -->
+    <div class="background-decor">
+        <span class="sparkle sparkle-1">✦</span>
+        <span class="sparkle sparkle-2">✦</span>
+        <span class="sparkle sparkle-3">✦</span>
+        <span class="sparkle sparkle-4">✦</span>
+        <span class="sparkle sparkle-5">✦</span>
+
+        <div class="cloud cloud-1">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="cloud cloud-2">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <main class="app">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <h1>
+                PIXEL ART MAKER
+                <span class="brush">🖌️</span>
+            </h1>
+
+            <p>Create your masterpiece one pixel at a time ✨</p>
+
+        </header>
+
+
+        <!-- TOOLBAR -->
+        <section class="toolbar">
+
+            <div class="tool-section">
+
+                <label for="colorPicker">
+                    🎨 Color
+                </label>
+
+                <input
+                    type="color"
+                    id="colorPicker"
+                    value="#000000"
+                >
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <div class="tool-section">
+
+                <label for="gridSize">
+                    ▦ Grid Size
+                </label>
+
+                <select id="gridSize">
+
+                    <option value="8">8 × 8</option>
+                    <option value="16">16 × 16</option>
+                    <option value="24" selected>24 × 24</option>
+                    <option value="32">32 × 32</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="divider"></div>
+
+
+            <button id="eraser" class="eraser-btn">
+                🧽 Eraser
+            </button>
+
+
+            <button id="clear" class="clear-btn">
+                🗑 Clear
+            </button>
+
+        </section>
+
+
+        <!-- WORKSPACE -->
+        <section class="workspace">
+
+
+            <!-- LEFT HELP CARD -->
+            <aside class="help-card">
+
+                <h2>🎨 How to use</h2>
+
+                <div class="help-content">
+
+                    <div class="help-item">
+                        <span>🖌️</span>
+
+                        <p>
+                            Left click and drag
+                            <br>
+                            to draw
+                        </p>
+                    </div>
+
+
+                    <div class="help-item">
+                        <span>🧽</span>
+
+                        <p>
+                            Use eraser to remove
+                            <br>
+                            pixels
+                        </p>
+                    </div>
+
+
+                    <div class="help-item">
+                        <span>🗑️</span>
+
+                        <p>
+                            Clear to start a
+                            <br>
+                            new art
+                        </p>
+                    </div>
+
+
+                    <div class="help-item">
+                        <span>▦</span>
+
+                        <p>
+                            Change grid size
+                            <br>
+                            for details
+                        </p>
+                    </div>
+
+                </div>
+
+            </aside>
+
+
+            <!-- PIXEL CANVAS -->
+            <div class="canvas-container">
+
+                <div id="grid"></div>
+
+            </div>
+
+
+            <!-- QUICK COLORS -->
+            <aside class="color-card">
+
+                <h2>Quick Colors 🖌️</h2>
+
+                <div class="color-palette">
+
+                    <button class="color-box" data-color="#000000"></button>
+                    <button class="color-box" data-color="#555555"></button>
+                    <button class="color-box" data-color="#ffffff"></button>
+                    <button class="color-box" data-color="#ef4444"></button>
+
+                    <button class="color-box" data-color="#ff8a16"></button>
+                    <button class="color-box" data-color="#ffc629"></button>
+                    <button class="color-box" data-color="#94d532"></button>
+                    <button class="color-box" data-color="#058c51"></button>
+
+                    <button class="color-box" data-color="#29bde0"></button>
+                    <button class="color-box" data-color="#347be3"></button>
+                    <button class="color-box" data-color="#884bd1"></button>
+                    <button class="color-box" data-color="#ef7ab5"></button>
+
+                    <button class="color-box" data-color="#7a3511"></button>
+                    <button class="color-box" data-color="#eda963"></button>
+                    <button class="color-box" data-color="#ffd4a0"></button>
+                    <button class="color-box" data-color="#dddddd"></button>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="footer-pill">
+                💜 Made with pixels and creativity 💜
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- Decorative landscape -->
+
+    <div class="landscape">
+
+        <div class="left-land">
+
+            <div class="tree tree-one">
+                <div class="tree-top"></div>
+                <div class="tree-trunk"></div>
+            </div>
+
+            <div class="tree tree-two">
+                <div class="tree-top"></div>
+                <div class="tree-trunk"></div>
+            </div>
+
+            <div class="flower flower-one">🌸</div>
+            <div class="flower flower-two">🌼</div>
+
+            <div class="easel">
+                <div class="painting">❤️</div>
+                <div class="easel-leg left-leg"></div>
+                <div class="easel-leg right-leg"></div>
+            </div>
+
+        </div>
+
+
+        <div class="water"></div>
+
+
+        <div class="right-land">
+
+            <div class="bush bush-one"></div>
+            <div class="bush bush-two"></div>
+
+            <div class="house">
+
+                <div class="roof"></div>
+
+                <div class="house-body">
+
+                    <div class="door"></div>
+                    <div class="window"></div>
+
+                </div>
+
+                <div class="chimney"></div>
+
+                <div class="smoke smoke-one"></div>
+                <div class="smoke smoke-two"></div>
+                <div class="smoke smoke-three"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
